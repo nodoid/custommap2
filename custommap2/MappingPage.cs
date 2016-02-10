@@ -27,8 +27,7 @@ namespace custommap2
             {
                 Device.BeginInvokeOnMainThread(() =>
                 {
-                    map.MoveToRegion(new MapSpan(new Position(App.Self.MyPosition.Latitude, App.Self.MyPosition.Longitude),
-                                                 53.43800, 2.96764));
+                    MoveMapTo(App.Self.MyPosition.LastKnownLocation());
                 });
             });
         }
@@ -77,7 +76,7 @@ namespace custommap2
             var initialLocation = userLocation ?? new LatLong(53.43800, 2.96764);
             var mapStartPosition = new Position(initialLocation.Latitude, initialLocation.Longitude);
 
-            BackgroundColor = App.Self.FaddedGreyText;
+            //BackgroundColor = App.Self.FaddedGreyText;
 
             map = new CustomMap(new MapSpan(mapStartPosition, zoom, zoom))
             {
@@ -229,7 +228,7 @@ namespace custommap2
                 HeightRequest = App.ScreenSize.Height * .45,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.Fill,
-                BackgroundColor = App.Self.FaddedGreyText,
+                //BackgroundColor = App.Self.FaddedGreyText,
                 Children =
             {
                 new StackLayout
@@ -253,7 +252,7 @@ namespace custommap2
             var mainStack = new StackLayout
             {
                 Orientation = StackOrientation.Vertical,
-                BackgroundColor = App.Self.FaddedGreyText,
+                //BackgroundColor = App.Self.FaddedGreyText,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 HeightRequest = App.ScreenSize.Height,
@@ -276,7 +275,7 @@ namespace custommap2
                 new StackLayout
                 {
                     VerticalOptions = LayoutOptions.End,
-                    BackgroundColor = App.Self.FaddedGreyText,
+                    //BackgroundColor = App.Self.FaddedGreyText,
                     Padding = new Thickness(0, up, 0, 0),
                     Children = { lblGPSMessage }
                 }

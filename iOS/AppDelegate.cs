@@ -12,10 +12,9 @@ namespace custommap2.iOS
             global::Xamarin.Forms.Forms.Init();
 
             Xamarin.FormsMaps.Init();
+            App.ScreenSize = new Size(UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
 
             LoadApplication(new App());
-
-            App.ScreenSize = new Size(UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
 
             return base.FinishedLaunching(app, options);
         }
