@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="iOS/custommap2.iOS.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="custommap2/MappingPage.cs">
+    <Files>
+      <File FileName="custommap2/Locations.cs" Line="23" Column="43" />
+      <File FileName="custommap2/MappingPage.cs" Line="157" Column="13" />
+      <File FileName="custommap2/custommap2.cs" Line="18" Column="52" />
+      <File FileName="custommap2/CustomView/CustomMap.cs" Line="3" Column="26" />
+      <File FileName="iOS/AppDelegate.cs" Line="23" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

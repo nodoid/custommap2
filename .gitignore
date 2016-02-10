@@ -1,0 +1,9 @@
+
+packages/*
+custommap2/bin/*
+custommap2/obj/*
+Droid/bin/*
+Droid/obj/*
+iOS/bin/*
+iOS/obj/*
+
