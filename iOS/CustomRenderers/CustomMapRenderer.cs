@@ -64,7 +64,7 @@ namespace custommap2.iOS
             annotation.Coordinate = new CLLocationCoordinate2D(currentPinLocation.Latitude, currentPinLocation.Longitude);
             mkMapView.Region = new MKCoordinateRegion(
                 new CLLocationCoordinate2D(currentPinLocation.Latitude, currentPinLocation.Longitude),
-                new MKCoordinateSpan(0.001, 0.001)
+                new MKCoordinateSpan(0.01, 0.01)
             );
 
             MessagingCenter.Subscribe<Map, MapSpan>(this, "MapMoveToRegion", MapMoveToRegion, mapModel);
